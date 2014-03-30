@@ -8,10 +8,8 @@
 
 # THANKS
 
-Il progetto è un Fork di Meetoogle
+Il progetto e' un Fork di Meetoogle - http://meetupve.googlepages.com/meetoogle.html
 il logo di Meetoogle e' stato creato da Marco-TO - http://www.meetup.com/members/3339499/
-
-FONTE: http://meetupve.googlepages.com/meetoogle.html
 
 # TECHNOLOGY COLOPHON
 
