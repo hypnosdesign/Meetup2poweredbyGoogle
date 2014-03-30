@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meetup 2 poweredbyGoogle</title>
+        <meta name="author" content="Mattia Piano">
+        <meta name="generator" content="selfmade">
+        <meta name="robots" content="all">
+        <meta name="description" content="Ricerca in tutti i meetup">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link type="text/plain" rel="author" href="humans.txt" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://www.google.com/jsapi?key=ABQIAAAAFEyVt-pBJaTXzM__EKlCrBTsyyvZhuBjP1YLRoRPwle1bnzSQRQBJp693I-9cLRWqwHDWCO_xmGezQ"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    </head>
+  <body>
+      <!--[if lt IE 7]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+  <div class="wrap">
+      <header>
+          <h1 class="ir">Meetup 2 poweredbyGoogle</h1>
+      </header>
+      <section>
+      	  
+          <form id="meetoogle_3" action="http://www.google.com/search" method="get" target="_blank">
+              <fieldset>
+                <legend><h2>Cerca in <em>tutti</em> i Meetup (compreso il board nazionale)</h2></legend>
+              <input type="radio" name="as_sitesearch" value="meetup.com/" checked="checked" id="ctim"/>
+                <label for="ctim">Cerca tra i messaggi</label>
+              <input type="radio" name="as_sitesearch" value="files.meetup.com/" id="ctif"/>
+                <label for="ctif">Cerca tra i file</label>
+                  <!-- <a href="" onclick="return ricerca_avanzata('meetoogle_3');" >Ricerca avanzata</a> --><br>
+                  <a href="http://www.google.com/"><img src="img/m_lg.png" alt="Google"></a>
+              <input maxlength="255" size="30" name="q" />&nbsp;
+              <input value="it" name="hl" type="hidden" />
+              <input value="Cerca in tutti i Meetup" type="submit" onclick="this.form.action='http://www.google.com/search';" /></a>
+            </fieldset>
+          </form>
+          
+          <form id="meetoogle_1" action="http://www.google.com/search" method="get" target="_blank" onsubmit="return invia(this);" onkeypress(13)="return invia(this);">
+            <fieldset>
+              <legend><h2>Cerca in <em>un solo</em> Meetup</h2></legend>
+              <input type="radio" name="as_sitesearch" value="meetup.com/" checked="checked" id="ctim1"/> 
+                <label for="ctim1">Cerca tra i messaggi</label>
+              <input type="radio" name="as_sitesearch" value="files.meetup.com/" id="ctif1"/>
+                <label for="ctif1">Cerca tra i file</label>
+               <!--    <a href="" onclick="return ricerca_avanzata('meetoogle_1');" >Ricerca avanzata</a> --> <br>
+                  <a href="http://www.google.com/"><img src="img/m_lg.png" alt="Google"></a>
+              <input maxlength="255" size="30" name="q" />&nbsp;
+              <input type="hidden" value="it" name="hl" />
+              <input type="submit"value="Cerca nel Meetup n."  onclick="this.form.action='http://www.google.com/search';" />&nbsp;
+              <input type="text" value="" name="nmeetup" size="5" id="nmeetup" />
+              </fieldset>
+          </form>
+          
+          <form id="meetoogle_4" action="http://www.google.com/search" method="get" target="_blank" onsubmit="return invia_disc(this);" onkeypress(13)="return invia_disc(this);">
+            <fieldset>
+              <legend><h2>Cerca in <em>una singola</em> discussione</h2></legend>
+              <input checked="checked" value="[copia qui l'indirizzo della discussione]" name="as_sitesearch" type="text"
+onclick="if (this.value=='[copia qui l\'indirizzo della discussione]') this.value='';" size="50" />
+                 <!--  <a href="" onclick="return ricerca_avanzata('meetoogle_4');" >Ricerca avanzata</a> --><br>
+                  <a href="http://www.google.com/"><img src="img/m_lg.png" alt="Google"></a>
+              <input maxlength="255" size="30" name="q" />&nbsp;
+              <input value="it" name="hl" type="hidden" />
+              <input value="Cerca nella discussione" type="submit" onclick="this.form.action='http://www.google.com/search';" />
+            </fieldset>
+          </form>
+          
+          <div>
+          </div>
+<hr>
+
+          <p>Prova Google Api per una più facile consultazione (in sviluppo)</p>
+          <div id="searchcontrol"></div>
+      </section>
+  </div>  <!-- fine .wrap -->
+
+  <footer>
+      <p>NB: i contenuti recenti potrebbero non essere visualizzati in quanto Google impiega alcune ore o giorni per indicizzare le nuove pagine (anche 10 giorni).</p>
+      <p>Versione 0.4 BETA - ultimo aggiornamento 30-03-2014</p>
+      <ul>
+        <li><a href="humans.txt"><img src="img/humanstxt-transparent-color.png" alt="humans.txt"></a></li>
+        <li><a href="https://github.com/hypnosdesign/meetup2poweredbygoogle"><img src="img/GitHub-Mark.png" alt="GitHub"></a></li>
+      </ul>
+      
+  </footer>
+  
+  	  
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-48064426-2');ga('send','pageview');
+      </script>
+  </body>
+</html>

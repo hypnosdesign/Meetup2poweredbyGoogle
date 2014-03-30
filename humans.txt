@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter> -- <website>
+    Mattia Piano - Web Developer - @hypnosdesign - http://www.hypnosdesign.net (under costruction)
+
+# THANKS
+
+Il progetto è un Fork di Meetoogle
+il logo di Meetoogle e' stato creato da Marco-TO - http://www.meetup.com/members/3339499/
+
+FONTE: http://meetupve.googlepages.com/meetoogle.html
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr,
+    Google WebSearch API, javascript
